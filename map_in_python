@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+import re
+import sys
+
+for line in sys.stdin:
+    val = line.strip().split()
+    (year,temp) = (val[0],val[1])
+    print("%s\t%s"%(year,temp))       # 输出键值对，类似：key1  val1
